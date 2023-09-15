@@ -5,7 +5,7 @@ const path = require('path');
 
 app.use(helmet.hidePoweredBy());
 app.use(helmet.frameguard({action: 'deny'}));
-
+app.use(helmet.xssFilter());
 
 
 
