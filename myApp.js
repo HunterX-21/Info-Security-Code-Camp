@@ -3,8 +3,8 @@ const app = express();
 const helmet = require('helmet');
 const path = require('path');
 
-
-
+app.use(helmet());
+app.use(helmet.hidePowerBy());
 
 
 
