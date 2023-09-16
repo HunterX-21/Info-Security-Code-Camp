@@ -8,6 +8,8 @@
 	},
 	"dependencies": {
 		"bcrypt": "^5.0.1",
+		"body-parser": "^1.16.0",
+		"cors": "^2.8.1",
 		"express": "^4.14.0",
 		"helmet": "^3.21.3"
 	},
