@@ -10,6 +10,12 @@ var fs = require("fs");
 var path = require("path");
 var bcrypt = require("bcrypt");
 
+fccTesting(app);
+const saltRounds = 12;
+const myPlaintextPassword = 'sUperpassw0rd!';
+const someOtherPlaintextPassword = 'pass123';
+
+
 app.use(function (req, res, next) {
   res.set({
     "Access-Control-Allow-Origin": "*",
