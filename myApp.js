@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const helmet = require('helmet');
 const path = require('path');
-
+const bcrypt = require("bcrypt");
 
 app.use(helmet({
   frameguard: {         // configure
