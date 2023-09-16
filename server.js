@@ -8,7 +8,10 @@ var app = express();
 app.disable("x-powered-by");
 var fs = require("fs");
 var path = require("path");
-const bcrypt = require('bcryptjs');
+const bcrypt = require("bcrypt");
+const bodyParser  = require('body-parser');
+const fccTesting  = require('./freeCodeCamp/fcctesting.js');
+fccTesting(app);
 
 const saltRounds = 12;
 const myPlaintextPassword = 'sUperpassw0rd!';
